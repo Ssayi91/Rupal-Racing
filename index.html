@@ -9,14 +9,26 @@
 <body>
 <header>
     <nav>
-        <a href="Home" class="logo"><img src="./Assets/Logos/rupal racing 9.jpeg" alt="logo"></a>
+        <ul class="sidebar">
+            <li onclick=hideSidebar()><a href="#"><i class="fa-solid fa-xmark"></i></a></li>
+            <li><a href="#Home">Home</a></li>
+            <li><a href="#Portfolio">Skills</a></li>
+            <li><a href="#Services">About</a></li>
+        
+        </ul>
+
+        <ul class="nav-main">
+        <li class="logo"><a href="Home" class="logo"><img src="./Assets/Logos/rupal racing 9.jpeg" alt="logo"></a></li>
         <div class="nav-links">
-        <a href="Home">Home</a>
-        <a href="Portfolio">Portfolio</a>
-        <a href="Services">Services</a>
+        <li class="hideOnMobile"><a href="Home">Home</a></li>
+        <li class="hideOnMobile"><a href="Portfolio">Portfolio</a></li>
+        <li class="hideOnMobile"><a href="Services">Services</a></li>
+        <li onclick=showSidebar()><a href="#"><i class="fa-solid fa-bars"></i></a></li>
         </div>
+        </ul>
     </nav>
 </header>
+
 <div class="carousel">
     <div class="list">
         <div class="item">
@@ -30,6 +42,7 @@
                 </div>
             </div>
         </div>
+
         <div class="item">
             <img src="./Assets/Rupal Racing/rupal racing event 1.jpg" alt="rupal racing event 1">
             <div class="content">
@@ -79,6 +92,9 @@
             <div class="gallery-item"><img src="Assets/Rupal Racing/gallery 9.jpg" alt="gallery 9"></div>
             <div class="gallery-item"><img src="Assets/Rupal Racing/gallery 6.jpg" alt="gallery 6"></div>
             <div class="gallery-item"><img src="Assets/Rupal Racing/gallery 14.jpg" alt="gallery 14"></div>
+            <div class="gallery-item"><img src="Assets/Rupal Racing/gallery 8.jpg" alt="gallery 8"></div>
+            <div class="gallery-item"><img src="Assets/Rupal Racing/gallery 4.jpg" alt="gallery 4"></div>
+            <div class="gallery-item"><img src="Assets/Rupal Racing/gallery 3.jpg" alt="gallery 3"></div>
         </div>
     </div>
     </section>

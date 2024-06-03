@@ -1,6 +1,5 @@
 const carouselList = document.querySelector('.list');
 const items = document.querySelectorAll('.item');
-const thumbnails = document.querySelectorAll('.thumbnails img');
 let currentIndex = 0;
 
 function updateCarousel(index) {
@@ -13,13 +12,6 @@ function autoRotate() {
     updateCarousel(currentIndex);
 }
 
-thumbnails.forEach((thumbnail, index) => {
-    thumbnail.addEventListener('click', () => {
-        currentIndex = index;
-        updateCarousel(index);
-    });
-});
-
 let autoRotateInterval = setInterval(autoRotate, 3000);
 
 carouselList.addEventListener('mouseover', () => {
@@ -29,3 +21,13 @@ carouselList.addEventListener('mouseover', () => {
 carouselList.addEventListener('mouseout', () => {
     autoRotateInterval = setInterval(autoRotate, 3000);
 });
+
+function showSidebar() {
+    var sidebar = document.querySelector('.sidebar');
+    sidebar.style.transform = 'translateX(0)';
+}
+
+function hideSidebar() {
+    var sidebar = document.querySelector('.sidebar');
+    sidebar.style.transform = 'translateX(-100%)';
+}
