@@ -15,27 +15,28 @@
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap">
 </head>
 <body>
-<header>
-    <nav>
-        <ul class="sidebar">
-            <li onclick=hideSidebar()><a href="#"><i class="fa-solid fa-xmark"></i></a></li>
-            <li><a href="#Home">Home</a></li>
-            <li><a href="#Portfolio">Skills</a></li>
-            <li><a href="#Services">About</a></li>
+    <header>
+        <nav class="navigation">
+            <div class="nav-main">
+            <li class="logo"><a href="Home" class="logo"><img src="./Assets/Logos/rupal racing 9.jpeg" alt="logo"></a></li>
+            <ul class="nav-links hideOnMobile">
+            <li><a href="Home">Home</a></li>
+            <li><a href="Portfolio">Portfolio</a></li>
+            <li><a href="Services">Services</a></li>
+            </ul>
+            <div class="hamburger-menu" onclick="toggleSidebar()">
+                &#9776;
+            </div>
+            </div>
+            <ul class="sidebar">
+            <li><a href="Home">Home</a></li>
+            <li><a href="Portfolio">Portfolio</a></li>
+            <li><a href="Services">Services</a></li>
+            </ul>
+        </nav>
+    </header>
         
-        </ul>
-
-        <ul class="nav-main">
-        <li class="logo"><a href="Home" class="logo"><img src="./Assets/Logos/rupal racing 9.jpeg" alt="logo"></a></li>
-        <div class="nav-links">
-        <li class="hideOnMobile"><a href="Home">Home</a></li>
-        <li class="hideOnMobile"><a href="Portfolio">Portfolio</a></li>
-        <li class="hideOnMobile"><a href="Services">Services</a></li>
-        <li onclick=showSidebar()><a href="#"><i class="fa-solid fa-bars"></i></a></li>
-        </div>
-        </ul>
-    </nav>
-</header>
+     
 
 <div class="carousel">
     <div class="list">

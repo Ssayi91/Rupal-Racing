@@ -22,12 +22,11 @@ carouselList.addEventListener('mouseout', () => {
     autoRotateInterval = setInterval(autoRotate, 3000);
 });
 
-function showSidebar() {
-    var sidebar = document.querySelector('.sidebar');
-    sidebar.style.transform = 'translateX(0)';
-}
-
-function hideSidebar() {
-    var sidebar = document.querySelector('.sidebar');
-    sidebar.style.transform = 'translateX(-100%)';
+function toggleSidebar() {
+    const sidebar = document.querySelector('.sidebar');
+    if (sidebar.style.display === 'flex') {
+        sidebar.style.display = 'none';
+    } else {
+        sidebar.style.display = 'flex';
+    }
 }
