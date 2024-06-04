@@ -261,25 +261,22 @@ h1 {
         display: block;
     }
 
-    .carousel {
-        margin-top: -10;
-    }
-
     .nav-main {
         justify-content: space-between;
     }
 
     .sidebar {
-        position: fixed;
+        position:fixed;
         top: 0;
         right: 0;
-        height: 150px;
+        height: 100px;
         width: 150px;
         padding-top: 20px;
     }
 
     .carousel {
         height: 50vh;
+        margin-top: -10px;
     }
 
     .item {
