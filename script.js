@@ -30,3 +30,35 @@ function toggleSidebar() {
         sidebar.style.display = 'flex';
     }
 }
+let cart = [];
+
+function addToCart(serviceName, servicePrice) {
+    const cartItem = cart.find(item => item.name === serviceName);
+    if (cartItem) {
+        cartItem.quantity++;
+    } else {
+        cart.push({ name: serviceName, price: servicePrice, quantity: 1 });
+    }
+    updateCart();
+}
+
+function updateCart() {
+    const cartItemsContainer = document.getElementById('cart-items');
+    const cartTotalContainer = document.getElementById('cart-total');
+    cartItemsContainer.innerHTML = '';
+    let total = 0;
+
+    cart.forEach(item => {
+        const li = document.createElement('li');
+        li.textContent = `${item.name} - $${item.price} x ${item.quantity}`;
+        cartItemsContainer.appendChild(li);
+        total += item.price * item.quantity;
+    });
+
+    cartTotalContainer.textContent = total.toFixed(2);
+}
+
+function displayContactNumber() {
+    const contactNumber = document.getElementById('contact-number');
+    contactNumber.style.display = 'block';
+}

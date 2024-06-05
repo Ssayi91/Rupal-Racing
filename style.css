@@ -112,7 +112,7 @@ nav .logo img{
     cursor: pointer;
 }
 
-
+/* carousel*/
 .carousel {
     width: 100vw;
     height: 100vh;
@@ -319,6 +319,78 @@ h1 {
     color: darkred;
 }
 
+/* add to cart*/
+.add-to-cart {
+    margin-top: 10px;
+    padding: 10px 20px;
+    background-color: darkred;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.add-to-cart:hover {
+    background-color: #ff4c4c;
+}
+
+.proceed-to-order {
+    margin-top: 10px;
+    padding: 10px 20px;
+    background-color: darkred;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.proceed-to-order:hover {
+    background-color: #ff4c4c;
+}
+
+#contact-number {
+    margin-top: 10px;
+    color: #f5f5f5;
+    font-size: 18px;
+}
+
+/* Cart Section */
+.cart {
+    max-width: 80%;
+    margin: 50px auto;
+    margin-bottom: -10px;
+    padding: 20px;
+    background-color: rgba(0, 0, 0, 0.8);
+    border: 2px solid darkred;
+    border-radius: 20px;
+    color: #f5f5f5;
+}
+
+.cart ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.cart ul li {
+    margin: 5px 0;
+}
+
+.cart h2{
+    font-family:'Poppins';
+    font-size: 22px bold;
+    text-transform: uppercase;
+
+}
+
+.cart p{
+    font-family:'Poppins';
+    font-size: 20px;
+    text-transform: capitalize;
+}
+
+
 /* Media Queries*/
 @media (max-width: 768px) {
     .hideOnMobile {
@@ -368,6 +440,9 @@ h1 {
     }
     .services-grid {
         grid-template-columns: 1fr;
+    }
+    .services {
+        padding: 0 10px;
     }
 }
 
