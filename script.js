@@ -42,6 +42,11 @@ function addToCart(serviceName, servicePrice) {
     updateCart();
 }
 
+function removeFromCart(serviceName) {
+    cart = cart.filter(item => item.name !== serviceName);
+    updateCart();
+}
+
 function updateCart() {
     const cartItemsContainer = document.getElementById('cart-items');
     const cartTotalContainer = document.getElementById('cart-total');
@@ -51,6 +56,13 @@ function updateCart() {
     cart.forEach(item => {
         const li = document.createElement('li');
         li.textContent = `${item.name} - $${item.price} x ${item.quantity}`;
+        
+        const removeButton = document.createElement('button');
+        removeButton.textContent = 'Remove';
+        removeButton.classList.add('remove-from-cart');
+        removeButton.onclick = () => removeFromCart(item.name);
+        
+        li.appendChild(removeButton);
         cartItemsContainer.appendChild(li);
         total += item.price * item.quantity;
     });
@@ -62,3 +74,21 @@ function displayContactNumber() {
     const contactNumber = document.getElementById('contact-number');
     contactNumber.style.display = 'block';
 }
+
+function placeOrder() {
+    if (cart.length === 0) {
+        alert('Your cart is empty.');
+        return;
+    }
+    
+    displayContactNumber();
+    const orderNotification = document.getElementById('order-notification');
+    orderNotification.style.display = 'block';
+}
+document.querySelector('.footer-carousel').addEventListener('mouseover', () => {
+    document.querySelector('.carousel-slide').style.animationPlayState = 'paused';
+});
+
+document.querySelector('.footer-carousel').addEventListener('mouseout', () => {
+    document.querySelector('.carousel-slide').style.animationPlayState = 'running';
+});

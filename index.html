@@ -5,6 +5,7 @@
     <title> Rupal Racing </title>
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
 </head>
 <!DOCTYPE html>
 <head>
@@ -112,47 +113,47 @@
     </section>
 
        <!-- Services Section -->
-<section class="services">
-    <h1>Our Services</h1>
-    <div class="services-grid">
-        <div class="service-item">
-            <img src="Assets/Rupal Racing/Body Respray 1.PNG" alt="Service 1">
-            <div class="service-content">
-                <h2>Body Respray</h2>
-                <p>Complete body respray services to give your vehicle a new look.</p>
-                <p class="price">$500</p>
-                <button class="add-to-cart" onclick="addToCart('Body Respray', 500)">Add to Cart</button>
+       <section class="services">
+        <h1>Our Services</h1>
+        <div class="services-grid">
+            <div class="service-item">
+                <img src="Assets/Rupal Racing/Body Respray 1.PNG" alt="Service 1">
+                <div class="service-content">
+                    <h2>Body Respray</h2>
+                    <p>Complete body respray services to give your vehicle a new look.</p>
+                    <p class="price">$500</p>
+                    <button class="add-to-cart" onclick="addToCart('Body Respray', 500)">Add to Cart</button>
+                </div>
+            </div>
+            <div class="service-item">
+                <img src="Assets/Rupal Racing/engine rebuild 2.jpg" alt="Service 2">
+                <div class="service-content">
+                    <h2>Engine Rebuild</h2>
+                    <p>Professional engine rebuilds to restore performance.</p>
+                    <p class="price">$2000</p>
+                    <button class="add-to-cart" onclick="addToCart('Engine Rebuild', 2000)">Add to Cart</button>
+                </div>
+            </div>
+            <div class="service-item">
+                <img src="Assets/Rupal Racing/SF roof conversion 3.jpg" alt="Service 3">
+                <div class="service-content">
+                    <h2>Car Fabrication</h2>
+                    <p>We can create/assemble bespoke parts for vehicles.</p>
+                    <p class="price">$1500</p>
+                    <button class="add-to-cart" onclick="addToCart('Car Fabrication', 1500)">Add to Cart</button>
+                </div>
+            </div>
+            <div class="service-item">
+                <img src="Assets/Rupal Racing/Compression test 2.PNG" alt="Service 4">
+                <div class="service-content">
+                    <h2>Compression Test</h2>
+                    <p>Measure the internal pressure of an engine’s cylinders.</p>
+                    <p class="price">$100</p>
+                    <button class="add-to-cart" onclick="addToCart('Compression Test', 100)">Add to Cart</button>
+                </div>
             </div>
         </div>
-        <div class="service-item">
-            <img src="Assets/Rupal Racing/engine rebuild 2.jpg" alt="Service 2">
-            <div class="service-content">
-                <h2>Engine Rebuild</h2>
-                <p>Professional engine rebuilds to restore performance.</p>
-                <p class="price">$2000</p>
-                <button class="add-to-cart" onclick="addToCart('Engine Rebuild', 2000)">Add to Cart</button>
-            </div>
-        </div>
-        <div class="service-item">
-            <img src="Assets/Rupal Racing/SF roof conversion 3.jpg" alt="Service 3">
-            <div class="service-content">
-                <h2>Car Fabrication</h2>
-                <p>We can create/assemble bespoke parts for vehicles.</p>
-                <p class="price">$1500</p>
-                <button class="add-to-cart" onclick="addToCart('Car Fabrication', 1500)">Add to Cart</button>
-            </div>
-        </div>
-        <div class="service-item">
-            <img src="Assets/Rupal Racing/Compression test 2.PNG" alt="Service 4">
-            <div class="service-content">
-                <h2>Compression Test</h2>
-                <p>Measure the internal pressure of an engine’s cylinders.</p>
-                <p class="price">$100</p>
-                <button class="add-to-cart" onclick="addToCart('Compression Test', 100)">Add to Cart</button>
-            </div>
-        </div>
-    </div>
-</section>
+    </section>
 
 <!-- Cart Section -->
 <section class="cart">
@@ -164,6 +165,43 @@
     <button class="proceed-to-order" onclick="displayContactNumber()">Proceed to Order</button>
     <p id="contact-number" style="display:none;">Call us at: <a href="tel:+1234567890">+1 234 567 890</a></p>
 </section>
-    </main>
+</main>
+<!-- Footer Section -->
+<footer>
+    <div class="footer-container">
+        <div class="footer-item">
+            <h3>Find Us</h3>
+            <div class="map-container">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3153.0566855616826!2d-122.41941548468192!3d37.77492917975962!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x80858164dfbb88ab%3A0x5d5ef54c2a4a0b69!2sGoogle!5e0!3m2!1sen!2sus!4v1642610846625!5m2!1sen!2sus" 
+                        width="100%" 
+                        height="200" 
+                        style="border:0;" 
+                        allowfullscreen="" 
+                        loading="lazy"></iframe>
+            </div>
+        </div>
+        <div class="footer-item">
+            <h3>Contact Us</h3>
+            <p>Phone: <a href="tel:+1234567890">+1 234 567 890</a></p>
+            <p>Email: <a href="mailto:info@rupalracing.com">info@rupalracing.com</a></p>
+            <div class="social-media">
+                <a href="https://www.facebook.com/RupalRacing" target="_blank" title="facebook-click"><i class="fa-brands fa-facebook fa-2x" style="color: darkred;"></i></a>
+                <a href="https://twitter.com" target="_blank" title="twitter-click"><i class="fa-brands fa-twitter fa-2x" style="color: darkred;"></i></a>
+                <a href="https://instagram.com" target="_blank" title="instagram-click"><i class="fa-brands fa-instagram fa-2x" style="color:darkred"></i></a>
+            </div>
+        </div>
+        <div class="footer-item">
+            <h3>Gallery</h3>
+            <div class="footer-carousel">
+                <div class="carousel-slide">
+                    <img src="Assets/Logos/rupal racing 6.jpeg" alt="Gallery Image 2">
+                    <img src="Assets/Rupal Racing/cover 4.jpg" alt="Gallery Image 3">
+                    <img src="Assets/Rupal Racing/cover 3.jpg" alt="Gallery Image 4">
+                    <img src="Assets/Rupal Racing/cover 5.jpg" alt="Gallery Image 4">
+                </div>
+            </div>
+        </div>
+    </div>
+</footer>
 <script src="script.js"></script>
 </body>
