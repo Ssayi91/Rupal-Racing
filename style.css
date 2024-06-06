@@ -149,6 +149,9 @@ nav .logo img{
     background-color: rgba(0, 0, 0, 0.8);
     padding: 20px;
     border-radius: 20px;
+    text-align: center;
+    text-transform: capitalize;
+    text-decoration: solid;
 }
 .author{
     font-weight: bold;
@@ -380,7 +383,8 @@ h1 {
 .cart h2{
     font-family:'Poppins';
     font-size: 22px bold;
-    text-transform: uppercase;
+    text-transform: capitalize;
+    text-align: center;
 
 }
 
@@ -440,6 +444,7 @@ footer {
     font-size: 20px;
     margin-bottom: 10px;
     color: darkred;
+    text-align: center;
 }
 
 .footer-item p, .footer-item a {
@@ -468,7 +473,7 @@ footer {
 .social-media a {
     display: inline-block;
     margin-right: 10px;
-    padding-left: 50px;
+    padding-left: 40px;
 }
 .social-media a:hover{
     cursor: pointer;
