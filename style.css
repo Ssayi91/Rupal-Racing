@@ -470,10 +470,16 @@ footer {
     border-radius: 20px;
 }
 
+.social-media{
+    text-align: center;
+}
+
 .social-media a {
     display: inline-block;
     margin-right: 10px;
     padding-left: 40px;
+    font-size: 24px;
+    color: darkred;
 }
 .social-media a:hover{
     cursor: pointer;

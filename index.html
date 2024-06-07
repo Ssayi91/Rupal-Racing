@@ -4,16 +4,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title> Rupal Racing </title>
     <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
-</head>
-<!DOCTYPE html>
-<head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title> Rupal Racing </title>
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" integrity="sha384-J2b/80UpWg1YQ1L5oZm3/uh5Cv9+cH5Z/ba2t6Pa72KlTV1hrtt12pL+qnRD0GfG" crossorigin="anonymous">
+
 </head>
 <body>
     <header>
@@ -21,8 +13,8 @@
             <div class="nav-main">
             <li class="logo"><a href="Home" class="logo"><img src="./Assets/Logos/rupal racing 9.jpeg" alt="logo"></a></li>
             <ul class="nav-links hideOnMobile">
-            <li><a href="Home">Home</a></li>
-            <li><a href="Portfolio">Portfolio</a></li>
+            <li><a href="#carousel">Home</a></li>
+            <li><a href="#Porfolio">Portfolio</a></li>
             <li><a href="Services">Services</a></li>
             </ul>
             <div class="hamburger-menu" onclick="toggleSidebar()">
@@ -36,9 +28,6 @@
             </ul>
         </nav>
     </header>
-        
-     
-
 <div class="carousel">
     <div class="list">
         <div class="item">
@@ -129,7 +118,6 @@
                     <button class="add-to-cart" onclick="addToCart('Body Respray', 500)">Add to Cart</button>
                     <div class="cart-info" id="cart-info-body-respray"></div>
                 </div>
-        
             </div>
             <div class="service-item">
                 <img src="Assets/Rupal Racing/engine rebuild 2.jpg" alt="Service 2">
@@ -137,10 +125,10 @@
                     <h2>Engine Rebuild</h2>
                     <p>Professional engine rebuilds to restore performance.</p>
                     <p class="price">$2000</p>
-                     <div class="quantity-selector">
-                            <label for="quantity-engine-rebuild">Quantity:</label>
-                            <input type="number" id="quantity-engine-rebuild" min="1" value="1">
-                        </div>
+                    <div class="quantity-selector">
+                        <label for="quantity-engine-rebuild">Quantity:</label>
+                        <input type="number" id="quantity-engine-rebuild" min="1" value="1">
+                    </div>
                     <button class="add-to-cart" onclick="addToCart('Engine Rebuild', 2000)">Add to Cart</button>
                     <div class="cart-info" id="cart-info-engine-rebuild"></div>
                 </div>
@@ -175,13 +163,10 @@
             </div>
         </div>
     </section>
-
 <!-- Cart Section -->
 <section class="cart">
     <h2>Cart</h2>
-    <ul id="cart-items">
-        <!-- Cart items will be added here -->
-    </ul>
+    <ul id="cart-items"></ul>
     <p>Total: $<span id="cart-total">0</span></p>
     <button class="proceed-to-order" onclick="displayContactNumber()">Proceed to Order</button>
     <p id="contact-number" style="display:none;">Call us at: <a href="tel:+1234567890">+1 234 567 890</a></p>
